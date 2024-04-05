@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to piCol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="landing-page.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content">
+        <div class="container">
+            <img src="color-picker.png" alt="piCol Logo" class="app-icon">
+            <h1>Welcome to piCol</h1>
+            <h3>A color picker app</h3>
+            <h5>Get your colors :)</h5>
+            <button id="enter-button">Enter</button><p></p>
+            <input type="file" id="image-upload" style="display: none;" >
+        </div>
+        <div id="color-popup" class="popup">
+            <div id="color-box"></div>
+            <p id="color-value"></p>
+            <p id="color-rgb"></p>
+            <button id="close-popup">Close</button>
+        </div>
+        <div id="image-container"></div> <!-- Placeholder for uploaded image -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
